@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function changeImageToCar(){
+                var img = document.getElementById("img");
+                img.src = "https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?cs=srgb&dl=lights-car-vehicle-244206.jpg&fm=jpg"
+            }
+            function changeImageToBike(){
+                var img = document.getElementById("img");
+                img.src = "https://th.bing.com/th/id/OIP.D-gG_WdOhnpmTFncyaKgIgHaE8?w=359&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+            }
+        </script>
+       
+    </head>
+    <body>
+        <div style="text-align: center; margin-top: 100px;">
+            <img 
+            id="img"
+            src="https://th.bing.com/th/id/OIP.D-gG_WdOhnpmTFncyaKgIgHaE8?w=359&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt=""
+            width="400px"
+            height="500px"
+            border = "2px solid black";
+            /><br/>
+            <button onclick="changeImageToCar()">car</button>
+            <button onclick="changeImageToBike()">bike</button>
+        </div>
+    </body>
+</html>

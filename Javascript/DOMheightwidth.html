@@ -1,0 +1,55 @@
+<!-- This code execute the modifying the elements , width , height -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Namaskara Bengaluru</title>
+        <script>
+            function changingStyleContent(){
+                console.log(document);
+
+                var h2Ref = document.getElementById("heading");
+                var pRef = document.getElementById("para");
+
+                h2Ref.innerText = "Namasthe Karnataka";
+                h2Ref.style.color = "red";
+                h2Ref.style.backgroundColor = "yellow";
+                h2Ref.style.padding = "10px";
+
+                pRef.style.color = "white";
+                pRef.style.backgroundColor= "green";
+                pRef.style.padding = "10px";
+                pRef.style.border = "10px solid red";
+            }
+            function fn500(){
+                var divRef = document.getElementById("id");
+                divRef.style.width = "500px";
+                divRef.style.height = "300px";
+
+            }
+            function fn800(){
+                var divRef = document.getElementById("id");
+                divRef.style.width = "800px";
+                divRef.style.height = "400px";
+            }
+
+        </script>
+        <style>
+            div {
+                width: 200px;
+                height: 500px;
+                border: 2px solid purple;
+                background-color: aqua;
+            }
+        </style>
+        <body>
+            <div id="id">
+                <h2 id="heading">Namasthe Tumkur</h2>
+                <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nobis error temporibus quis! Ullam impedit, libero cumque dignissimos nihil laudantium laborum architecto repudiandae temporibus, ducimus dolorum tempore autem asperiores. Minus?</p>
+            </div>
+            <button onclick="changingStyleContent()">Cick once</button>
+            <button onclick="fn800()">800px</button>
+            <button onclick="fn500()">500px</button>
+        </body>
+    </head>
+</html>

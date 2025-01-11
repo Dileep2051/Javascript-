@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            function createH2(){
+                var h2 = document.createElement("h2"); // Creating a element
+                h2.innerText = "Hello I am h2";
+                h2.style.color="red";
+                document.getElementById("body").appendChild(h2); // If u mention the appendchild then only execute the innertext
+            }
+        </script>
+
+    </head>
+    <body id="body">
+        <h1>Create h2 Element</h1>
+        <button onclick="createH2()">Create h2</button>
+    </body>
+</html>

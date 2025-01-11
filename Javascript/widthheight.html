@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            function fn300(){
+                var divRef = document.getElementById("dl")
+                divRef.style.width = "300px";
+            }
+            function fn600(){
+                var divRef= document.getElementById("dl")
+                divRef.style.width = "600px"
+                divRef.style.height = "300px";
+            }
+            function fn900(){
+                var divRef = document.getElementById("dl")
+                divRef.style.width = "900px"
+                divRef.style.height = "200px";
+            }
+        </script>
+        <style>
+            div {
+                width: 200px;
+                height: 400px;
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="dl"></div>
+        </br>
+        <button onclick="fn300()">300PX</button>
+        <button onclick="fn600()">600PX</button>
+        <button onclick="fn900()">900PX</button>
+    </body>
+</html>

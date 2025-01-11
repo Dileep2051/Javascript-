@@ -1,0 +1,35 @@
+<!-- // Code will execute the colour changes in button when the mouse course enter & leave on the button -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            // adding the content to execute after click the button
+            function fnClick(){
+                var btn = document.getElementById("btn");
+                btn.textContent = "User Cicked This Button";
+                btn.disabled= true;
+            }
+            // To write the code for reflcet the colour on button, when the mouse enter on the button
+            function fn2(){
+                var btn = document.getElementById("btn");
+                btn.style.backgroundColor = "red";
+                btn.style.color = "blue";
+                btn.style.border = "2px solid red";
+            }
+            // Colour fnctn will changes after mouse leave from the button
+            function fn3(){
+                var btn = document.getElementById("btn");
+                btn.style.backgroundColor = "orange";
+                btn.style.color = "white";
+                btn.style.border = "2px solid black";
+            }
+        </script>
+    </head>
+    <body id="body" onload="changeBgColor()">
+        <div>
+            <button id="btn" onclick="fnClick()" onmouseenter="fn2()" onmouseleave="fn3()">Click Here</button>
+        </div>
+    </body>
+</html>

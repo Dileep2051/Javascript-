@@ -1,0 +1,27 @@
+<!-- Gender Reflection -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            function input(){
+                var input = document.getElementById("input")
+                paragraph = document.getElementById("para")
+                paragraph.textContent = input.value;
+            }
+
+            function selectedGender(gender){
+                document.getElementById("gender").textContent = 'User is ${gender}';
+
+            }
+        </script>
+    </head>
+    <body>
+        <input value="" type="text" id="input" placeholder="Enter Some Text" onkeydown="input()">
+        <p id="para"></p>
+        <input type="radio" name="gender" value="male" onchange="selectedGender('male')">Male
+        <input type="radio" name="gender" value="female" onchange="selectedGender('female')">Female
+        <p id="gender">oiuytredfghjkjhgfvbnm</p>
+    </body>
+</html>

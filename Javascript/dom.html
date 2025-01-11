@@ -1,0 +1,61 @@
+<!-- This code is modifying the elements by using JAVA Script -->
+
+<!DOCTYPE html>
+<html>
+    
+   <head>
+    <title>DOM Manupulation</title>
+    <script>
+        function changingStyleContent(){
+            console.log(document);
+        
+        var h2Ref = document.getElementById("Heading");
+        //Reference of paragraph element
+        var pRef = document.getElementById("para");
+
+        h2Ref.innerText = "Dom Manupulation By using JS ";
+        h2Ref.style.color = "red";
+        h2Ref.style.width = "1500px";
+        h2Ref.style.backgroundColor = "ivory";
+        h2Ref.style.padding = "2px";
+       
+
+        pRef.style.backgroundColor = "Orange";
+        pRef.style.padding = "30px";
+        pRef.style.color = "purple";  
+        
+    
+        }
+        function fn1800(){
+            var divRef = document.getElementById("id");
+            divRef.style.width = "1800px";
+        }
+        function fn1500(){
+            var divRef = document.getElementById("id")
+            divRef.style.width = "1500px"
+        }
+    </script>
+    <style>
+        div {
+            width: 1200px;
+            height: 200px;
+            border: 5px solid red;
+            background-color: aqua;
+            color: blueviolet;
+        }
+        h
+    </style>
+   </head>
+
+    <body>
+        <div id="id">
+            <h2 id="Heading">Dom Manupulation</h2>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatum, sunt consectetur consequatur voluptates officia incidunt illum provident dolore similique inventore iste corporis hic officiis exercitationem omnis facilis eius maxime?</p>
+            <button onclick="changingStyleContent()">Change color & Title</button>
+            <button onclick="fn1800()">1800px</button>
+            <button onclick="fn1500()">1500px</button>
+        </div>
+        
+    </body>
+</html> 
+

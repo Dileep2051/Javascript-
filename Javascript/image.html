@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <script>
+            function ChangeToBike(){
+                var img = document.getElementById("img");
+                img.src = "https://wallpapercave.com/wp/wc1757389.jpg"; 
+            }
+            function ChangeToCar(){
+                var img = document.getElementById("img");
+                img.src = "https://th.bing.com/th?id=OIP.NDOdMC_KsCMy-cpI6kRK5wHaEW&w=326&h=191&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2";
+            }
+        </script>
+
+    </head>
+    <body>
+        <div style="text-align: center;margin-top:100px;margin: auto;"></div>
+        <img 
+         id = "img" ;
+         width="300px";
+         height="300px";
+         border = "2px solid black";
+        />
+       <br/>
+       <button onclick="ChangeToBike()" >Bike</button>
+       <button onclick="ChangeToCar()">Car</button>
+
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function changeFont(){
+      var h2Ref = document.getElementById("content");
+      var sizeRef = document.getElementById("size");
+      
+      switch (sizeRef.value){
+        case "10":
+          h2Ref.style.fontSize = "10";
+          break;
+
+          case "20":
+          h2Ref.style.fontSize = "20";
+          break;
+
+          case "30":
+          h2Ref.style.fontSize = "30";
+          break;
+
+          case "35":
+          h2Ref.style.fontSize = "35";
+          break;
+
+          default: 
+          h2Ref.style.fontSize = "25";
+        
+      }
+    }
+
+    function changeColor(){
+      var h2Ref = document.getElementById("content");
+      var colorRef = document.getElementById("color");
+
+      switch (colorRef.value){
+        case "Red": 
+        h2Ref.style.color = "red";
+        break;
+
+        case "Blue": 
+        h2Ref.style.color = "blue";
+        break;
+
+        case "Yellow": 
+        h2Ref.style.color = "yellow";
+        break;
+
+        case "Orange": 
+        h2Ref.style.color = "orange";
+        break;
+
+        default: 
+        h2Ref.style.color = "silver";     
+      }
+    }
+  </script>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <select id="color" onchange="changeColor()">
+      <option>Colour</option>
+      <option>Red</option>
+      <option>Blue</option>
+      <option>Orange</option>
+      <option>Yellow</option>
+      <option>Brown</option>
+      <option>Black</option>
+    </select>
+
+    <select id="size" onchange="changeFont()">
+      <option>Size</option>
+      <option>10</option>
+      <option>20</option>
+      <option>30</option>
+
+      <option>35</option>
+      <option>40</option>
+      <option>50</option>
+    </select>
+
+    <h2 id="content">Hello Dileep RaM</h2>
+  </div>
+  
+</body>
+</html>
